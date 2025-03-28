@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wenbin Gallery with banner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
+</head>
+
+<body onkeydown="esckey(event)">
+    <nav class="menu">
+        <div class="menu-div">
+            <div class="menu-marca">
+               <a href="#" class="marca"><img src="assets/img/marca.jpg" alt=""></a>
+                <p><a href="#">Mais Ofertas</a></p> 
+            </div>
+            <ul>
+                <li><a href="#banner">banner</a></li>
+                <li><a href="#gal">frutas</a></li>
+                <li><a href="#preco">preço</a></li>
+                <li></li>
+            </ul> 
+        </div>
+    </nav>
+
+    <div class="heading" id="banner">
+        <h1>Mercado Mais Ofertas</h1>
+    </div>
+    <div class="banner">
+        <img src="assets/img/banner.jpg" alt="" id="bannerImage">
+    </div>
+
+    <div class="gallery" id="gal">
+        <div class="gallery-item">
+            <img src="assets/img/abacaxi.jpg"
+                alt="1"
+                onclick="openModal('assets/img/abacaxi.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/banana.jpg"
+                alt="2"
+                onclick="openModal('assets/img/banana.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/laranja.jpg"
+                alt="3"
+                onclick="openModal('assets/img/laranja.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/maca.jpg"
+                alt="4"
+                onclick="openModal('assets/img/maca.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/melancia.jpg"
+                alt="5"
+                onclick="openModal('assets/img/melancia.jpg')">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/img/uva.jpg"
+                alt="6"
+                onclick="openModal('assets/img/uva.jpg')">
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="">
+    </div>
+    <section id="preco" class="preco">
+        <table>
+            <thead>
+                <tr>
+                    <th>Preços</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Abacaxi - Ceasas</td>
+                <td>Pérola-Graúdo</td>
+                <td>R$4,58/Kg</td>
+              </tr>
+              <tr>
+                <td>Banana Nanica/Prata - Ceasas</td>
+                <td>Nanica-Extra</td>
+                <td>R$4,00/Kg</td>
+              </tr>
+              <tr>
+                <td>Laranja - Ceasas</td>
+                <td>Laranja Pera Gde</td>
+                <td>R$4,50/Kg</td>
+              </tr>
+              <tr>
+                <td>Maçã Fuji - Ceasas</td>
+                <td>Ceasa - Campinas/SP	7,78</td>
+                <td>R$7,78/Kg</td>
+              </tr>
+              <tr>
+                <td>Melancia - Ceasas</td>
+                <td>Redonda Graúda</td>
+                <td>R$3,00/Kg</td>
+              </tr>
+              <tr>
+                <td>Uva - Ceasas</td>
+                <td>Itália-Extra</td>
+                <td>R$13,00/Kg</td>
+              </tr>
+        </table>
+    </section>
+
+    <footer id="footer" class="footer">
+        <p><span class="span"> &copy;</span> 2024 2°ano Sis. Wenbin n°39. Pixel art</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

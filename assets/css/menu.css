@@ -1,0 +1,45 @@
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: green;
+}
+.menu a {
+    display: block; 
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    background-color: rgba(95, 158, 160, 0.588);
+    border-radius: 50px;
+}
+.menu ul { 
+    justify-content: space-between;
+    list-style: none;
+    display: flex; 
+}
+.menu img{
+    height: 5rem;
+    width: auto;
+}
+.menu-div{
+    display: flex;
+    justify-content: space-around;
+}
+.menu-marca{
+    margin: auto 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .menu-marca a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+} */
